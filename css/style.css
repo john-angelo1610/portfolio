@@ -41,13 +41,6 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.container, .container-fluid{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
@@ -83,15 +76,16 @@ hr {
 #about img{
     padding-bottom: 20px;
 }
-#about a, footer a, footer p{
+
+#about a, footer :is(p, a){
     color: aliceblue;
 }
 
-#about a:hover, footer a:hover{
+:is(#about, footer) a:hover{
     color: #176192;
 }
 
-#about a:active, footer a:active{
+:is(#about, footer) a:active{
     color: #212529;
 }
 
@@ -127,7 +121,7 @@ hr {
     background: #3D9FE1;
 }
 
-.grow-shadow h3, #achievements+section h3{
+.grow-shadow h3{
     margin-bottom: .75rem;
     font-size: 28px;
 }
@@ -146,7 +140,6 @@ hr {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-radius: 50rem;
     background: aliceblue;
     color: #176192;
