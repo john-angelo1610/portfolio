@@ -81,11 +81,11 @@ hr {
     color: aliceblue;
 }
 
-:is(#about, footer) a:hover{
+:is(#about, footer, #skills) a:hover{
     color: #176192;
 }
 
-:is(#about, footer) a:active{
+:is(#about, footer, #skills) a:active{
     color: #212529;
 }
 
@@ -104,6 +104,8 @@ hr {
 #skills h2, .lead, #home-banner p{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
+#skills div:last-child .col-md-6{text-align: center;}
+
 .grow-shadow {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -149,7 +151,7 @@ hr {
     display: block;
 }
 
-#achievements+section a{
+:is(#achievements+section, small) a{
     color: #212529;
 }
 
@@ -216,10 +218,6 @@ h5.lead{
 }
 
 footer{background: #3D9FE1;}
-
-@media (max-width: 767.98px) {
-    #skills div:last-child .row .col-md-6{text-align: center;}
-}
 @media (max-width: 991.98px) {
     #about p.text-justify.lead{padding-right: 0 !important;}
     #about{box-shadow: #176192 0 20px;}
