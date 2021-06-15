@@ -28,15 +28,8 @@
 .products-wrapper .tabs-wrapper .tab-item.active{
     color: aliceblue;
 }
-@media screen and (min-width: 600px) {
-    .products-wrapper .tabs-wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-   }
-}
-@media screen and (min-width: 1200px) {
-    .products-wrapper .tabs-wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-   }
+.products-wrapper .tabs-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
 }
 .products-wrapper .tabbed-content {
     height: min-content;
@@ -76,4 +69,13 @@
     .products-wrapper .tabbed-content .item-content {
         grid-template-columns: repeat(2, 1fr);
    }
+}
+
+@media (max-width: 575.98px) {
+    .tab-item i{
+        font-size: 50px;
+    }
+    .tab-item p{
+        display: none;
+    }
 }
