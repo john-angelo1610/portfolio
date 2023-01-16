@@ -68,7 +68,7 @@
 @media screen and (min-width: 768px) {
     .products-wrapper .tabbed-content .item-content {
         grid-template-columns: repeat(2, 1fr);
-   }
+    }
 }
 
 @media (max-width: 575.98px) {
